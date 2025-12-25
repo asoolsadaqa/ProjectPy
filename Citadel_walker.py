@@ -5,6 +5,7 @@ import math
 import random
 
 def create_street_contour():
+    """to create an irregular closed shape representing the citadel shape"""
     t = list(np.arange(0, 361,10))
     x = []
     for i in t:
@@ -19,3 +20,4 @@ def create_street_contour():
 x,y=create_street_contour()
 plt.plot(x,y)
 plt.show()
+
